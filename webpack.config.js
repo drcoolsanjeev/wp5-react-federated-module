@@ -6,7 +6,7 @@ module.exports = (_, argv) => ({
   output: {
     publicPath:
       argv.mode === "development"
-        ? "http://localhost:4005/"
+        ? "http://localhost:8080/"
         : "https://wp5-react-federated-host.vercel.app/",
   },
 
@@ -15,7 +15,7 @@ module.exports = (_, argv) => ({
   },
 
   devServer: {
-    port: 4005,
+    port: 8080,
   },
 
   module: {
